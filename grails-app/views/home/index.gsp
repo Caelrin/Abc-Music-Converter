@@ -1,0 +1,1 @@
+<g:link controller="abcSong" action="create">Create a Song</g:link>
