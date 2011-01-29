@@ -1,15 +1,18 @@
 package com.expcork.musicconverter.music
 
+import com.expcork.musicconverter.util.NoteLengthUtil;
+
 
 class Measure {
 	String noteString
 	int defaultNoteLength
 	
 	def getNotes() {
-		def songStringMatcher = noteString =~ /([CDEFGABcdefgab][,\']?)/
+		def songStringMatcher = noteString =~ /([CDEFGABcdefgab][,\'']?)(\/[0-9]*)?/
 		def notes = []
 		songStringMatcher.each {
-			notes.add(Note.createFromString(it[1], NoteLength.QUARTER_NOTE))
+			int noteLength = NoteLengthUtil.modifyByAbcString(defaultNoteLength, it[2])
+			notes.add(Note.createFromString(it[1], noteLength))
 		}
 		
 		notes

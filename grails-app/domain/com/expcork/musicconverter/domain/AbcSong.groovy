@@ -2,7 +2,7 @@ package com.expcork.musicconverter.domain
 
 import com.expcork.musicconverter.music.Measure;
 import com.expcork.musicconverter.music.Note;
-import com.expcork.musicconverter.music.NoteLength;
+import com.expcork.musicconverter.util.NoteLengthUtil;
 
 
 

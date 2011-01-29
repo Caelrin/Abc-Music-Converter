@@ -1,14 +1,20 @@
-package com.expcork.musicconverter.music
+package com.expcork.musicconverter.util
 
-enum NoteLength {
-	QUARTER_NOTE("quarterNote"),
-	EIGTH_NOTE("eigthNote")
+
+
+class NoteLengthUtil {
 	
-	private def NoteLength(style) {
-		this.style = style
+	def static modifyByAbcString(baseLength, abcString) {
+		if(abcString == null) {return baseLength}
+		def useDivide = (abcString[0] == "/") 
+		def numberRegex = abcString =~ /\/?([0-9]*)/
+		def numberModifier = NumberUtils.toLongOrNull(numberRegex[0][1])
+		if(useDivide) {
+			baseLength * numberModifier
+		} else {
+			baseLength / numberModifier		
+		}
+		
 	}
 	
-	String style
-	
-
 }

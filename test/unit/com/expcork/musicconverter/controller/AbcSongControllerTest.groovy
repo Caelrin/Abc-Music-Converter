@@ -6,7 +6,7 @@ import static com.expcork.musicconverter.testUtil.MusicUtils.*
 import org.junit.Test;
 import com.expcork.musicconverter.domain.AbcSong;
 import com.expcork.musicconverter.domain.Key;
-import com.expcork.musicconverter.music.NoteLength;
+import com.expcork.musicconverter.util.NoteLengthUtil;
 
 
 import grails.test.GrailsUnitTestCase;
@@ -73,7 +73,7 @@ class AbcSongControllerTest extends ControllerUnitTestCase {
 		def songDisplayed = controller.renderArgs.model.abcSong
 		assert "My random Title" == songDisplayed.title
 		assert "d5" == songDisplayed.measures[0].notes[0].pitch
-		assert NoteLength.QUARTER_NOTE == songDisplayed.measures[0].notes[0].length
+		assert 4 == songDisplayed.measures[0].notes[0].length
 	}
 
 }

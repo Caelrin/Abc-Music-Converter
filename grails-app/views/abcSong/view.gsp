@@ -10,7 +10,7 @@
 			<g:each var="note" in="${measure.notes }">
 				${note.pitch}&nbsp;${note.length.style} ==
 			</g:each>
-			|
+			<br/>
 		</g:each>
 	</div>
 </div>

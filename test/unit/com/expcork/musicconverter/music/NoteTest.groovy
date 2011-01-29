@@ -6,6 +6,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import com.expcork.musicconverter.testUtil.MusicUtils;
+import com.expcork.musicconverter.util.NoteLengthUtil;
 
 
 import grails.test.GrailsUnitTestCase;
@@ -20,7 +21,7 @@ class NoteTest extends GrailsUnitTestCase{
 		def actualNotes = []
 
 		noteListToCreate.each {
-			actualNotes.add Note.createFromString(it, NoteLength.QUARTER_NOTE)
+			actualNotes.add Note.createFromString(it, 4)
 		}		
 		
 		def expectedNotes = MusicUtils.createListOfNotesFromC3toB7()

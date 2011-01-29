@@ -4,7 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.expcork.musicconverter.music.NoteLength;
+import com.expcork.musicconverter.util.NoteLengthUtil;
+
 import static com.expcork.musicconverter.testUtil.MusicUtils.*
 
 

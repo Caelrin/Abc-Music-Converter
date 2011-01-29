@@ -3,7 +3,7 @@ package com.expcork.musicconverter.music
 
 class Note {
 	String pitch
-	NoteLength length
+	Integer length
 	
 	def static pitchMap = [
 		'C,' : "c3",
