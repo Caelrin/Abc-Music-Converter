@@ -271,3 +271,14 @@ th.desc a {
     background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
     padding-left: 28px;
 }
+
+
+/*Music bar*/
+.musicBar {
+    background-image: url(../images/musicBar.png);
+    background-repeat: repeat-x;
+    width: inherit;
+    float: left;
+}
+
+/*Note positions*/

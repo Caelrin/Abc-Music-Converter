@@ -13,18 +13,23 @@ class AbcSong {
 	Integer topMeter
 	Integer bottomMeter
 	Integer noteLength
-	String songString
+	String songString = ""
 	
 	static constraints = {
 		composer(nullable: true)
 	}
 	
 	def getMeasures() {
-		def measureMatcher = songString =~ /([^|]*)/
+		def measureMatcher = songString =~ /([^a-gA-G]?)([^\|:]*)(:?)(\|?)(]?)/
 		def measures = []
 		measureMatcher.each {
-			if(it[0] != null && it[0].trim() != "") {
-				measures.add new Measure(noteString: it[0].trim(), defaultNoteLength: noteLength)
+			if(it[2] != null && it[2].trim() != "") {
+              def newMeasure = new Measure(noteString: it[2].trim(),
+                      defaultNoteLength: noteLength,
+                      repeatMeasure: it[3] == ":",
+                      finalMeasure: it[5] == "]",
+                      differingRepeatString: it[1].trim())
+              measures.add newMeasure
 			}
 		}
 		measures
@@ -60,7 +65,7 @@ class AbcSong {
 				property(abcSong, it[3])
 			}
 			if(it[4] != null && it[4].trim() != "") {
-				abcSong.songString = it[4].trim()
+				abcSong.songString += it[4].trim()
 			}
 		}
 		fillInMissingDefaults(abcSong)

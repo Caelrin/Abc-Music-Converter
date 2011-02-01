@@ -6,9 +6,12 @@ import com.expcork.musicconverter.util.NoteLengthUtil;
 class Measure {
 	String noteString
 	int defaultNoteLength
+    Boolean repeatMeasure
+    Boolean finalMeasure
+    String differingRepeatString
 	
 	def getNotes() {
-		def songStringMatcher = noteString =~ /([CDEFGABcdefgab][,\'']?)(\/[0-9]*)?/
+		def songStringMatcher = noteString =~ /([CDEFGABcdefgab][,\'']?)(\/?[0-9]*)?/
 		def notes = []
 		songStringMatcher.each {
 			int noteLength = NoteLengthUtil.modifyByAbcString(defaultNoteLength, it[2])

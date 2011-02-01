@@ -76,4 +76,27 @@ class AbcSongControllerTest extends ControllerUnitTestCase {
 		assert 4 == songDisplayed.measures[0].notes[0].length
 	}
 
+    @Test
+    void saveShouldBeAbleToSavePaddyORaffertyCorrectly() {
+		def key = new Key(key: "D")
+		mockDomain(AbcSong)
+		mockDomain(Key, [key])
+		def controller = new AbcSongController()
+		controller.params.abcSong = paddyORafferty
+
+		controller.save()
+
+		assert "view" == controller.redirectArgs.action
+		def abcSong = AbcSong.get(controller.redirectArgs.params.abcSongId)
+        def measures = abcSong.measures
+        assert "dfe dBA" == measures[7].noteString
+        assert true == measures[7].repeatMeasure
+        assert false == measures[7].finalMeasure
+        assert "1" == measures[7].differingRepeatString
+      assert "dfe dcB" == measures[8].noteString
+      assert false == measures[8].repeatMeasure
+      assert true == measures[8].finalMeasure
+      assert "2" == measures[8].differingRepeatString
+    }
+
 }

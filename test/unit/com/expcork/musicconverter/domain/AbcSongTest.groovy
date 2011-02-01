@@ -74,5 +74,67 @@ class AbcSongTest extends GrailsUnitTestCase{
 		assert "d e f" == measures[1].noteString
 		assert 4 == measures[1].defaultNoteLength
 	}
-	
+  
+	@Test
+	void getMeasuresShouldRecognizeRepeatMeasures() {
+		def abcSong = new AbcSong(noteLength: 4, songString: "a b c :| d e f")
+
+		def measures = abcSong.measures
+
+		assert "a b c" == measures[0].noteString
+		assert 4 == measures[0].defaultNoteLength
+		assert "d e f" == measures[1].noteString
+		assert 4 == measures[1].defaultNoteLength
+        assert true == measures[0].repeatMeasure
+	}
+
+	@Test
+	void getMeasuresShouldRecognizeEndMeasure() {
+		def abcSong = new AbcSong(noteLength: 4, songString: "a b c | d e f|]")
+
+		def measures = abcSong.measures
+
+		assert "a b c" == measures[0].noteString
+		assert 4 == measures[0].defaultNoteLength
+		assert "d e f" == measures[1].noteString
+		assert 4 == measures[1].defaultNoteLength
+        assert true == measures[1].finalMeasure
+	}
+
+	@Test
+	void getMeasuresShouldRecognizeRepeatEndMeasure() {
+		def abcSong = new AbcSong(noteLength: 4, songString: "a b c | d e f:|]")
+
+		def measures = abcSong.measures
+
+		assert "a b c" == measures[0].noteString
+		assert 4 == measures[0].defaultNoteLength
+		assert "d e f" == measures[1].noteString
+		assert 4 == measures[1].defaultNoteLength
+        assert true == measures[1].finalMeasure
+        assert true == measures[1].repeatMeasure
+	}
+
+	@Test
+	void getMeasuresShouldRecognizeMultiRepeatParts() {
+		def abcSong = new AbcSong(noteLength: 4, songString: "a b c |1 d e f:|2 e f F:|]")
+
+		def measures = abcSong.measures
+
+		assert "a b c" == measures[0].noteString
+		assert 4 == measures[0].defaultNoteLength
+      assert "" == measures[0].differingRepeatString
+      assert false == measures[0].repeatMeasure
+      assert false == measures[0].finalMeasure
+      assert "d e f" == measures[1].noteString
+      assert 4 == measures[1].defaultNoteLength
+      assert true == measures[1].repeatMeasure
+      assert "1" == measures[1].differingRepeatString
+      assert "e f F" == measures[2].noteString
+      assert 4 == measures[2].defaultNoteLength
+      assert true == measures[2].repeatMeasure
+      assert true == measures[2].finalMeasure
+      assert "2" == measures[2].differingRepeatString
+    }
+
 }
