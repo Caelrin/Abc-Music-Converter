@@ -14,7 +14,11 @@
   <div id="songNotes">
     <div class="musicLine">
       <span class="musicInfo">
-        <img src="../images/trebleCleff.png" alt=""/>
+        <img src="../images/trebleCleff.png" alt="" class="trebleSignature"/>
+        <span class="meter">
+          ${abcSong.topMeter }
+          ${abcSong.bottomMeter }
+        </span>
       </span>
       <g:each var="measure" status="i" in="${abcSong.measures }">
               <span class="musicBar">
