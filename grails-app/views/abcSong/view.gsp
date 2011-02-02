@@ -14,10 +14,11 @@
     <g:each var="measure" in="${abcSong.measures }">
       <div class="musicBar">
         <g:each var="note" in="${measure.notes }">
-           <span class="d4">
+           <span class="${note.pitch}">
              <img src="../images/quarterNote.png" alt=""/>
            </span>
         </g:each>
+        ||
         <br/>
       </div>
     </g:each>

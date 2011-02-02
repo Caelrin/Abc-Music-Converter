@@ -1,4 +1,131 @@
-d4 {
-     position: relative;
-    top: -10px;
+$interval: 4.5px;
+$base: 51px;
+
+@mixin note($numberOfIntervals) {
+    position: relative;
+    top: $base - ($interval * $numberOfIntervals);
+    margin-left: 2px;
+    margin-right: 2px;
+    width: inherit;
+    float: left;
+}
+
+@mixin noteBetweenBarsOutsideOfMeasures($numberOfIntervals) {
+    @include note($numberOfIntervals);
+    background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+}
+
+@mixin noteOnBarOutsideOfMeasures($numberOfIntervals) {
+    @include note($numberOfIntervals);
+    background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+}
+
+@mixin flipped() {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipY;
+    -ms-filter: "FlipY";
+    margin-top: 19px;
+}
+
+.c3 {
+    @include noteBetweenBarsOutsideOfMeasures(1);
+}
+
+.d3 {
+    @include noteOnBarOutsideOfMeasures(2);
+}
+.e3 {
+    @include noteBetweenBarsOutsideOfMeasures(3);
+}
+.f3 {
+    @include noteOnBarOutsideOfMeasures(4);
+}
+.g3 {
+    @include noteBetweenBarsOutsideOfMeasures(5);
+}
+.a4 {
+    @include noteOnBarOutsideOfMeasures(6);
+}
+.b4 {
+    @include noteBetweenBarsOutsideOfMeasures(7);
+}
+.c4 {
+    @include noteOnBarOutsideOfMeasures(8);
+}
+.d4 {
+    @include note(9);
+}
+.e4 {
+    @include note(10);
+}
+.f4 {
+    @include note(11);
+}
+.g4 {
+    @include note(12);
+}
+.a5 {
+    @include note(13);
+}
+.b5 {
+    @include note(14);
+}
+.c5 {
+    @include note(15);
+    @include flipped()
+}
+.d5 {
+    @include note(16);
+    @include flipped()
+}
+.e5 {
+    @include note(17);
+    @include flipped()
+}
+.f5 {
+    @include note(18);
+    @include flipped()
+}
+.g5 {
+    @include note(19);
+    @include flipped()
+}
+.a6 {
+    @include noteOnBarOutsideOfMeasures(20);
+    @include flipped()
+}
+.b6 {
+    @include noteBetweenBarsOutsideOfMeasures(21);
+    @include flipped()
+}
+.c6 {
+    @include noteOnBarOutsideOfMeasures(22);
+    @include flipped()
+}
+.d6 {
+    @include noteBetweenBarsOutsideOfMeasures(23);
+    @include flipped()
+}
+.e6 {
+    @include noteOnBarOutsideOfMeasures(24);
+    @include flipped()
+}
+.f6 {
+    @include noteBetweenBarsOutsideOfMeasures(25);
+    @include flipped()
+}
+.g6 {
+    @include noteOnBarOutsideOfMeasures(26);
+    @include flipped()
+}
+.a7 {
+    @include noteBetweenBarsOutsideOfMeasures(27);
+    @include flipped()
+}
+.b7 {
+    @include noteOnBarOutsideOfMeasures(28);
+    @include flipped()
 }

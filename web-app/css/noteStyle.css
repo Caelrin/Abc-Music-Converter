@@ -1,0 +1,338 @@
+.c3 {
+  position: relative;
+  top: 46.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png"); }
+
+.d3 {
+  position: relative;
+  top: 42px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png"); }
+
+.e3 {
+  position: relative;
+  top: 37.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png"); }
+
+.f3 {
+  position: relative;
+  top: 33px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png"); }
+
+.g3 {
+  position: relative;
+  top: 28.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png"); }
+
+.a4 {
+  position: relative;
+  top: 24px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png"); }
+
+.b4 {
+  position: relative;
+  top: 19.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png"); }
+
+.c4 {
+  position: relative;
+  top: 15px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png"); }
+
+.d4 {
+  position: relative;
+  top: 10.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left; }
+
+.e4 {
+  position: relative;
+  top: 6px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left; }
+
+.f4 {
+  position: relative;
+  top: 1.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left; }
+
+.g4 {
+  position: relative;
+  top: -3px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left; }
+
+.a5 {
+  position: relative;
+  top: -7.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left; }
+
+.b5 {
+  position: relative;
+  top: -12px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left; }
+
+.c5 {
+  position: relative;
+  top: -16.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
+
+.d5 {
+  position: relative;
+  top: -21px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
+
+.e5 {
+  position: relative;
+  top: -25.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
+
+.f5 {
+  position: relative;
+  top: -30px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
+
+.g5 {
+  position: relative;
+  top: -34.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
+
+.a6 {
+  position: relative;
+  top: -39px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
+
+.b6 {
+  position: relative;
+  top: -43.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
+
+.c6 {
+  position: relative;
+  top: -48px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
+
+.d6 {
+  position: relative;
+  top: -52.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
+
+.e6 {
+  position: relative;
+  top: -57px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
+
+.f6 {
+  position: relative;
+  top: -61.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
+
+.g6 {
+  position: relative;
+  top: -66px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
+
+.a7 {
+  position: relative;
+  top: -70.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
+
+.b7 {
+  position: relative;
+  top: -75px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: inherit;
+  float: left;
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+  margin-top: 19px; }
