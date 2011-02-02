@@ -1,0 +1,17 @@
+.musicBar {
+  background-image: url(../images/musicBar.png);
+  background-repeat: repeat-x;
+  width: 23%;
+  float: left; }
+
+.musicInfo {
+  background-image: url(../images/musicBar.png);
+  background-repeat: repeat-x;
+  float: left; }
+
+.musicLine {
+  width: 100%;
+  clear: left; }
+
+.measureEnds {
+  bottom: 15px; }

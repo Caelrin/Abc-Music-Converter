@@ -9,7 +9,7 @@ import com.expcork.musicconverter.util.NoteLengthUtil;
 class AbcSong {
 	String title
 	String composer
-	Key key
+	String key
 	Integer topMeter
 	Integer bottomMeter
 	Integer noteLength
@@ -39,7 +39,7 @@ class AbcSong {
 		'T': {song, value -> song.title = value}, 
 		'X': {song, value -> },
 		'C': {song, value -> song.composer = value},
-		'K': {song, value -> song.key = Key.findByKey(value)},
+		'K': {song, value -> song.key = value},
 		'M': {song, value -> def valuesMatcher = value =~ /(.)\/?(.)?/
 				def bottomNumber
 				def topNumber = valuesMatcher[0][1]
@@ -74,7 +74,7 @@ class AbcSong {
 	
 	def static fillInMissingDefaults(abcSong) {
 		if(!abcSong.key) {
-			abcSong.key = Key.findByKey('C')
+			abcSong.key = 'C'
 		}
 		if(!abcSong.topMeter) {
 			abcSong.topMeter = 4

@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 import static com.expcork.musicconverter.testUtil.MusicUtils.*
 import org.junit.Test;
 import com.expcork.musicconverter.domain.AbcSong;
-import com.expcork.musicconverter.domain.Key;
 import com.expcork.musicconverter.util.NoteLengthUtil;
 
 
@@ -15,9 +14,7 @@ class AbcSongControllerTest extends ControllerUnitTestCase {
 	
 	@Test
 	void saveShouldSaveIndividualAbcSong() {
-		def key = new Key(key: "C")
 		mockDomain(AbcSong)
-		mockDomain(Key, [key])
 		def controller = new AbcSongController()
 		controller.params.abcSong = abcSimpleExample
 		
@@ -27,7 +24,7 @@ class AbcSongControllerTest extends ControllerUnitTestCase {
 		def abcSong = AbcSong.get(controller.redirectArgs.params.abcSongId)
 		assert "Song Title" == abcSong.title
 		assert "Composer" == abcSong.composer
-		assert key == abcSong.key
+		assert "C" == abcSong.key
 		assert 4 == abcSong.topMeter
 		assert 4 == abcSong.bottomMeter
 		assert 4 == abcSong.noteLength
@@ -36,9 +33,7 @@ class AbcSongControllerTest extends ControllerUnitTestCase {
 	
 	@Test
 	void saveShouldSaveSuccessfullyWhenOnlyGivenTitleAndSong() {
-		def key = new Key(key: "C")
 		mockDomain(AbcSong)
-		mockDomain(Key, [key])
 		def controller = new AbcSongController()
 		controller.params.abcSong = abcMissingAllButTitleExample
 		
@@ -78,9 +73,7 @@ class AbcSongControllerTest extends ControllerUnitTestCase {
 
     @Test
     void saveShouldBeAbleToSavePaddyORaffertyCorrectly() {
-		def key = new Key(key: "D")
 		mockDomain(AbcSong)
-		mockDomain(Key, [key])
 		def controller = new AbcSongController()
 		controller.params.abcSong = paddyORafferty
 

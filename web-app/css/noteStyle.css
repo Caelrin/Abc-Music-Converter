@@ -3,7 +3,6 @@
   top: 46.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png"); }
 
@@ -12,7 +11,6 @@
   top: 42px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteOnBarOutsideOfMeasure.png"); }
 
@@ -21,7 +19,6 @@
   top: 37.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png"); }
 
@@ -30,7 +27,6 @@
   top: 33px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteOnBarOutsideOfMeasure.png"); }
 
@@ -39,7 +35,6 @@
   top: 28.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png"); }
 
@@ -48,7 +43,6 @@
   top: 24px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteOnBarOutsideOfMeasure.png"); }
 
@@ -57,7 +51,6 @@
   top: 19.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png"); }
 
@@ -66,7 +59,6 @@
   top: 15px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteOnBarOutsideOfMeasure.png"); }
 
@@ -75,7 +67,6 @@
   top: 10.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left; }
 
 .e4 {
@@ -83,7 +74,6 @@
   top: 6px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left; }
 
 .f4 {
@@ -91,7 +81,6 @@
   top: 1.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left; }
 
 .g4 {
@@ -99,7 +88,6 @@
   top: -3px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left; }
 
 .a5 {
@@ -107,7 +95,6 @@
   top: -7.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left; }
 
 .b5 {
@@ -115,7 +102,6 @@
   top: -12px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left; }
 
 .c5 {
@@ -123,7 +109,6 @@
   top: -16.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
@@ -138,7 +123,6 @@
   top: -21px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
@@ -153,7 +137,6 @@
   top: -25.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
@@ -168,7 +151,6 @@
   top: -30px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
@@ -183,7 +165,6 @@
   top: -34.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
@@ -198,7 +179,6 @@
   top: -39px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteOnBarOutsideOfMeasure.png");
   -moz-transform: scaleY(-1);
@@ -214,7 +194,6 @@
   top: -43.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
   -moz-transform: scaleY(-1);
@@ -230,7 +209,6 @@
   top: -48px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteOnBarOutsideOfMeasure.png");
   -moz-transform: scaleY(-1);
@@ -246,7 +224,6 @@
   top: -52.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
   -moz-transform: scaleY(-1);
@@ -262,7 +239,6 @@
   top: -57px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteOnBarOutsideOfMeasure.png");
   -moz-transform: scaleY(-1);
@@ -278,7 +254,6 @@
   top: -61.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
   -moz-transform: scaleY(-1);
@@ -294,7 +269,6 @@
   top: -66px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteOnBarOutsideOfMeasure.png");
   -moz-transform: scaleY(-1);
@@ -310,7 +284,6 @@
   top: -70.5px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
   -moz-transform: scaleY(-1);
@@ -326,7 +299,6 @@
   top: -75px;
   margin-left: 2px;
   margin-right: 2px;
-  width: inherit;
   float: left;
   background-image: url("../images/noteOnBarOutsideOfMeasure.png");
   -moz-transform: scaleY(-1);

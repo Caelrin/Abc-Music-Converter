@@ -1,0 +1,24 @@
+@mixin backgroundOfMusicBar() {
+    background-image: url(../images/musicBar.png);
+    background-repeat: repeat-x;
+}
+
+.musicBar {
+    @include backgroundOfMusicBar();
+    width: 23%;
+    float: left;
+}
+
+.musicInfo {
+    @include backgroundOfMusicBar();
+    float: left;
+}
+
+.musicLine {
+    width: 100%;
+    clear: left;
+}
+
+.measureEnds {
+    bottom: 15px;
+}

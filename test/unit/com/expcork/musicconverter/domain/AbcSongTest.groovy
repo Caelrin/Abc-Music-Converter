@@ -15,15 +15,13 @@ class AbcSongTest extends GrailsUnitTestCase{
 	
 	@Test
 	void parseAbcSongShouldCreateAbcSongWithProperInformation() {
-		def key = new Key(key: "C")
 		mockDomain(AbcSong)
-		mockDomain(Key, [key])
-		
+
 		def abcSong = AbcSong.parseAbc(abcSimpleExample)
 		
 		assert "Song Title" == abcSong.title
 		assert "Composer" == abcSong.composer
-		assert key == abcSong.key
+		assert "C" == abcSong.key
 		assert 4 == abcSong.topMeter
 		assert 4 == abcSong.bottomMeter
 		assert 4 == abcSong.noteLength
@@ -32,15 +30,13 @@ class AbcSongTest extends GrailsUnitTestCase{
 	
 	@Test
 	void parseAbcSongShouldCreateAbcSongWithProperInformationWhenModeIsCommonTime() {
-		def key = new Key(key: "C")
 		mockDomain(AbcSong)
-		mockDomain(Key, [key])
-		
+
 		def abcSong = AbcSong.parseAbc(commonTimeExample)
 		
 		assert "Song Title" == abcSong.title
 		assert "Composer" == abcSong.composer
-		assert key == abcSong.key
+		assert "C" == abcSong.key
 		assert 4 == abcSong.topMeter
 		assert 4 == abcSong.bottomMeter
 		assert 4 == abcSong.noteLength
@@ -49,14 +45,12 @@ class AbcSongTest extends GrailsUnitTestCase{
 	
 	@Test
 	void parseAbcSongShouldCreateAbcSongWithDefaultKeyMeterAndNoteLengthInformationWhenNotSet() {
-		def key = new Key(key: "C")
 		mockDomain(AbcSong)
-		mockDomain(Key, [key])
-		
+
 		def abcSong = AbcSong.parseAbc(abcMissingAllButTitleExample)
 		
 		assert "Missing Song Title" == abcSong.title
-		assert key == abcSong.key
+		assert "C" == abcSong.key
 		assert 4 == abcSong.topMeter
 		assert 4 == abcSong.bottomMeter
 		assert 8 == abcSong.noteLength
@@ -135,6 +129,16 @@ class AbcSongTest extends GrailsUnitTestCase{
       assert true == measures[2].repeatMeasure
       assert true == measures[2].finalMeasure
       assert "2" == measures[2].differingRepeatString
+    }
+
+	@Test
+	void getMeasuresShouldRecognizeDottedQuarterNotes() {
+		def abcSong = new AbcSong(noteLength: 8, songString: "a3")
+
+		def measures = abcSong.measures
+
+        def note = measures[0].getNotes()[0]
+		assert "dottedQuarterNote.png" == NoteLengthUtil.imageNameFromLength(note.length)
     }
 
 }
