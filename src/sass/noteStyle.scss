@@ -9,14 +9,15 @@ $base: 51px;
     float: left;
 }
 
-@mixin noteBetweenBarsOutsideOfMeasures($numberOfIntervals) {
-    @include note($numberOfIntervals);
+@mixin noteBetweenBarsOutsideOfMeasures() {
     background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+    background-repeat: no-repeat;
 }
 
-@mixin noteOnBarOutsideOfMeasures($numberOfIntervals) {
-    @include note($numberOfIntervals);
+
+@mixin noteOnBarOutsideOfMeasure() {
     background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+    background-repeat: no-repeat;
 }
 
 @mixin flipped() {
@@ -24,107 +25,66 @@ $base: 51px;
     -o-transform: scaleY(-1);
     -webkit-transform: scaleY(-1);
     transform: scaleY(-1);
-    filter: FlipY;
-    -ms-filter: "FlipY";
-    margin-top: 19px;
+    margin-top: 20px;
 }
 
-.c3 {
-    @include noteBetweenBarsOutsideOfMeasures(1);
+@mixin createNote($i, $offset, $noteOnBarNumber, $noteBetweenBarNumber, $flipPointNumber, $noteOnBarNumberTop, $noteBetweenBarNumberTop) {
+        @if $i == $noteOnBarNumber or $i == $noteOnBarNumberTop {
+            @include noteOnBarOutsideOfMeasure()
+        }
+        @if $i == $noteBetweenBarNumber or $i == $noteBetweenBarNumberTop {
+            @include noteBetweenBarsOutsideOfMeasures()
+        }
+        @if $i >= $flipPointNumber {
+            @include flipped()
+        }
+        @include note( (($i - 2) * 7) - $offset)
+
 }
 
-.d3 {
-    @include noteOnBarOutsideOfMeasures(2);
+@for $i from 3 through 7 {
+    .a#{$i} {
+        @include createNote($i, 8, 4, 0, 6, 6, 7)
+    }
+    .b#{$i} {
+        @include createNote($i, 7, 0, 4, 6, 7, 6)
+    }
+    .c#{$i} {
+        @include createNote($i, 6, 4, 3, 5, 6, 0)
+    }
+    .d#{$i} {
+        @include createNote($i, 5, 3, 0, 5, 0, 6)
+    }
+    .e#{$i} {
+        @include createNote($i, 4, 0, 3, 5, 6, 0)
+    }
+    .f#{$i} {
+        @include createNote($i, 3, 3, 0, 5, 0, 6)
+    }
+    .g#{$i} {
+        @include createNote($i, 2, 0, 3, 5, 6, 0)
+    }
+    .a#{$i}-key {
+        @include createNote($i, 8, 4, 0, 10, 6, 7)
+    }
+    .b#{$i}-key {
+        @include createNote($i, 7, 0, 4, 10, 7, 6)
+    }
+    .c#{$i}-key {
+        @include createNote($i, 6, 4, 3, 10, 6, 0)
+    }
+    .d#{$i}-key {
+        @include createNote($i, 5, 3, 0, 10, 0, 6)
+    }
+    .e#{$i}-key {
+        @include createNote($i, 4, 0, 3, 10, 6, 0)
+    }
+    .f#{$i}-key {
+        @include createNote($i, 3, 3, 0, 10, 0, 6)
+    }
+    .g#{$i}-key {
+        @include createNote($i, 2, 0, 3, 10, 6, 0)
+    }
 }
-.e3 {
-    @include noteBetweenBarsOutsideOfMeasures(3);
-}
-.f3 {
-    @include noteOnBarOutsideOfMeasures(4);
-}
-.g3 {
-    @include noteBetweenBarsOutsideOfMeasures(5);
-}
-.a4 {
-    @include noteOnBarOutsideOfMeasures(6);
-}
-.b4 {
-    @include noteBetweenBarsOutsideOfMeasures(7);
-}
-.c4 {
-    @include noteOnBarOutsideOfMeasures(8);
-}
-.d4 {
-    @include note(9);
-}
-.e4 {
-    @include note(10);
-}
-.f4 {
-    @include note(11);
-}
-.g4 {
-    @include note(12);
-}
-.a5 {
-    @include note(13);
-}
-.b5 {
-    @include note(14);
-}
-.c5 {
-    @include note(15);
-    @include flipped()
-}
-.d5 {
-    @include note(16);
-    @include flipped()
-}
-.e5 {
-    @include note(17);
-    @include flipped()
-}
-.f5 {
-    @include note(18);
-    @include flipped()
-}
-.g5 {
-    @include note(19);
-    @include flipped()
-}
-.a6 {
-    @include noteOnBarOutsideOfMeasures(20);
-    @include flipped()
-}
-.b6 {
-    @include noteBetweenBarsOutsideOfMeasures(21);
-    @include flipped()
-}
-.c6 {
-    @include noteOnBarOutsideOfMeasures(22);
-    @include flipped()
-}
-.d6 {
-    @include noteBetweenBarsOutsideOfMeasures(23);
-    @include flipped()
-}
-.e6 {
-    @include noteOnBarOutsideOfMeasures(24);
-    @include flipped()
-}
-.f6 {
-    @include noteBetweenBarsOutsideOfMeasures(25);
-    @include flipped()
-}
-.g6 {
-    @include noteOnBarOutsideOfMeasures(26);
-    @include flipped()
-}
-.a7 {
-    @include noteBetweenBarsOutsideOfMeasures(27);
-    @include flipped()
-}
-.b7 {
-    @include noteOnBarOutsideOfMeasures(28);
-    @include flipped()
-}
+
+

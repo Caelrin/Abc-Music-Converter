@@ -1,66 +1,147 @@
+.a3 {
+  position: relative;
+  top: 55.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.b3 {
+  position: relative;
+  top: 51px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
 .c3 {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   position: relative;
   top: 46.5px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png"); }
+  float: left; }
 
 .d3 {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   position: relative;
   top: 42px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteOnBarOutsideOfMeasure.png"); }
+  float: left; }
 
 .e3 {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   position: relative;
   top: 37.5px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png"); }
+  float: left; }
 
 .f3 {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   position: relative;
   top: 33px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteOnBarOutsideOfMeasure.png"); }
+  float: left; }
 
 .g3 {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   position: relative;
   top: 28.5px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png"); }
+  float: left; }
+
+.a3-key {
+  position: relative;
+  top: 55.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.b3-key {
+  position: relative;
+  top: 51px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.c3-key {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 46.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.d3-key {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 42px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.e3-key {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 37.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.f3-key {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 33px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.g3-key {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 28.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
 
 .a4 {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   position: relative;
   top: 24px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteOnBarOutsideOfMeasure.png"); }
+  float: left; }
 
 .b4 {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   position: relative;
   top: 19.5px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png"); }
+  float: left; }
 
 .c4 {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   position: relative;
   top: 15px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteOnBarOutsideOfMeasure.png"); }
+  float: left; }
 
 .d4 {
   position: relative;
@@ -90,6 +171,61 @@
   margin-right: 2px;
   float: left; }
 
+.a4-key {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 24px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.b4-key {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 19.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.c4-key {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 15px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.d4-key {
+  position: relative;
+  top: 10.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.e4-key {
+  position: relative;
+  top: 6px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.f4-key {
+  position: relative;
+  top: 1.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.g4-key {
+  position: relative;
+  top: -3px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
 .a5 {
   position: relative;
   top: -7.5px;
@@ -105,206 +241,412 @@
   float: left; }
 
 .c5 {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  margin-top: 20px;
   position: relative;
   top: -16.5px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
+  float: left; }
+
+.d5 {
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
-
-.d5 {
+  margin-top: 20px;
   position: relative;
   top: -21px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
+  float: left; }
+
+.e5 {
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
-
-.e5 {
+  margin-top: 20px;
   position: relative;
   top: -25.5px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
+  float: left; }
+
+.f5 {
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
-
-.f5 {
+  margin-top: 20px;
   position: relative;
   top: -30px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
+  float: left; }
+
+.g5 {
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
-
-.g5 {
+  margin-top: 20px;
   position: relative;
   top: -34.5px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
+  float: left; }
+
+.a5-key {
+  position: relative;
+  top: -7.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.b5-key {
+  position: relative;
+  top: -12px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.c5-key {
+  position: relative;
+  top: -16.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.d5-key {
+  position: relative;
+  top: -21px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.e5-key {
+  position: relative;
+  top: -25.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.f5-key {
+  position: relative;
+  top: -30px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.g5-key {
+  position: relative;
+  top: -34.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.a6 {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
-
-.a6 {
+  margin-top: 20px;
   position: relative;
   top: -39px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  float: left; }
+
+.b6 {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
-
-.b6 {
+  margin-top: 20px;
   position: relative;
   top: -43.5px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  float: left; }
+
+.c6 {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
-
-.c6 {
+  margin-top: 20px;
   position: relative;
   top: -48px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  float: left; }
+
+.d6 {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
-
-.d6 {
+  margin-top: 20px;
   position: relative;
   top: -52.5px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  float: left; }
+
+.e6 {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
-
-.e6 {
+  margin-top: 20px;
   position: relative;
   top: -57px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  float: left; }
+
+.f6 {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
-
-.f6 {
+  margin-top: 20px;
   position: relative;
   top: -61.5px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  float: left; }
+
+.g6 {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
-
-.g6 {
+  margin-top: 20px;
   position: relative;
   top: -66px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
+  float: left; }
+
+.a6-key {
   background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -39px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.b6-key {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -43.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.c6-key {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -48px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.d6-key {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -52.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.e6-key {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -57px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.f6-key {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -61.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.g6-key {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -66px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.a7 {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
-
-.a7 {
+  margin-top: 20px;
   position: relative;
   top: -70.5px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  float: left; }
+
+.b7 {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
-
-.b7 {
+  margin-top: 20px;
   position: relative;
   top: -75px;
   margin-left: 2px;
   margin-right: 2px;
-  float: left;
-  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  float: left; }
+
+.c7 {
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
-  filter: FlipY;
-  -ms-filter: "FlipY";
-  margin-top: 19px; }
+  margin-top: 20px;
+  position: relative;
+  top: -79.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.d7 {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  margin-top: 20px;
+  position: relative;
+  top: -84px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.e7 {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  margin-top: 20px;
+  position: relative;
+  top: -88.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.f7 {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  margin-top: 20px;
+  position: relative;
+  top: -93px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.g7 {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  margin-top: 20px;
+  position: relative;
+  top: -97.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.a7-key {
+  background-image: url("../images/noteBetweenBarsOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -70.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.b7-key {
+  background-image: url("../images/noteOnBarOutsideOfMeasure.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -75px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.c7-key {
+  position: relative;
+  top: -79.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.d7-key {
+  position: relative;
+  top: -84px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.e7-key {
+  position: relative;
+  top: -88.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.f7-key {
+  position: relative;
+  top: -93px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
+
+.g7-key {
+  position: relative;
+  top: -97.5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left; }
