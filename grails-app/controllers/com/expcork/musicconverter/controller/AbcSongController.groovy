@@ -25,4 +25,9 @@ class AbcSongController {
 		render(view: "view", model: [abcSong: abcSong])
 	}
 
+  def list = {
+    def abcSongs = AbcSong.findAll()
+    render(view: "list", model: [abcSongs: abcSongs])
+  }
+
 }

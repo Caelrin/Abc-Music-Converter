@@ -92,4 +92,18 @@ class AbcSongControllerTest extends ControllerUnitTestCase {
       assert "2" == measures[8].differingRepeatString
     }
 
+  @Test
+  void listShouldDisplayAllSavedAbcSongs() {
+    def song1 = new AbcSong(id: 1)
+    def song2 = new AbcSong(id: 2)
+    mockDomain(AbcSong, [song1, song2])
+    def controller = new AbcSongController()
+
+    controller.list()
+
+    assert "list" == controller.renderArgs.view
+    assert 1 == controller.renderArgs.model.abcSongs[0].id
+    assert 2 == controller.renderArgs.model.abcSongs[1].id
+  }
+
 }
